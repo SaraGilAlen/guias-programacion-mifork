@@ -18,6 +18,13 @@ Por favor, escribe en impersonal las respuestas.
 ## 1. ¿Cuáles son las cuatro características básicas de la programación orientada a objetos? Describe brevemente cada una
 
 ### Respuesta
+Las cuatro características fundamentales de la programación orientada a objetos son **encapsulamiento**, **abstracción**, **herencia** y **polimorfismo**. Estas propiedades permiten organizar el código en torno a entidades llamadas *objetos*, facilitando su mantenimiento y reutilización. Aunque en C se trabaja con estructuras y funciones separadas, en orientación a objetos se combina en una misma unidad tanto los datos como las operaciones que los manipulan.
+
+El **encapsulamiento** consiste en agrupar datos y métodos en una clase, controlando el acceso a ellos mediante niveles de visibilidad como `private`, `public` o `protected`. Esto evita que otras partes del programa modifiquen directamente información interna, reduciendo errores. En Java, por ejemplo, suele usarse métodos *getters* y *setters* para acceder a atributos privados, algo que contrasta con la exposición directa típica de las estructuras en C.
+
+La **abstracción** implica ocultar los detalles internos de funcionamiento y mostrar solo lo esencial. Una clase proporciona una interfaz clara y deja en segundo plano la complejidad interna. De esta manera, se puede usar un objeto sin necesidad de conocer cómo están implementados sus métodos, de forma similar a cómo en C se emplea una función sin saber necesariamente su código interno, pero ahora aplicado a entidades más complejas.
+
+La **herencia** permite crear nuevas clases a partir de otras existentes, reutilizando su comportamiento y extendiéndolo cuando sea necesario. Esto evita duplicación de código y facilita la creación de jerarquías lógicas. Por último, el **polimorfismo** posibilita que distintos objetos respondan de manera diferente a un mismo método, siempre que compartan un tipo base. Este concepto resulta especialmente útil cuando se quiere diseñar código flexible que funcione con múltiples tipos de objetos sin modificar la lógica principal.
 
 
 ## 2. Cita cuatro lenguajes populares que permitan la programación orientada a objetos
@@ -96,3 +103,4 @@ Por favor, escribe en impersonal las respuestas.
 ## 17. Quitemos un poco de magia a todo esto: ¿Como se podría “emular”, con `struct` en C, la clase `Punto`, con su función para calcular la distancia al origen? ¿Qué ha pasado con `this`?
 
 ### Respuesta
+
